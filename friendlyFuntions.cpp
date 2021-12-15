@@ -14,6 +14,12 @@ private:
     string name;
 public:
     friend class Printer;
+    
+    // else 
+    // friend void Printer :: printEmp(const Employee & e);
+    // could have been written which would have made only this printEmp function as friendly.
+    // and not the whole class. 
+    
     Employee(int i, string n) : id(i), name(n){}
 };
 
